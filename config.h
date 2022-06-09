@@ -67,7 +67,7 @@ static const char *lockcmd[] = { "slock", NULL };
 static const char lowervolume[] = "pamixer --allow-boost -d 5 && pkill -SIGRTMIN+1 dwmblocks";
 static const char raisevolume[] = "pamixer --allow-boost -i 5 && pkill -SIGRTMIN+1 dwmblocks";
 static const char togglemute[] = "pamixer -t && pkill -SIGRTMIN+1 dwmblocks";
-static const char printscr[] = "import $HOME/Images/Screenshots/screenshot-$(date +%Y-%m-%d-%H-%M-%S).png";
+static const char printscr[] = "flameshot full -p $HOME/Images/Screenshots/screenshot-$(date +%Y-%m-%d-%H-%M-%S).png";
 
 static Key keys[] = {
 	/* modifier                     key                         function        argument */
